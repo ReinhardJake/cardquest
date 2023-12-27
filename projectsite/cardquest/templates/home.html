@@ -8,7 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
     <title>{%block title%} CardQuest Master {%endblock%}</title>
@@ -25,7 +25,12 @@
     <!--CONTENT-->
     <main>
       {%block content%}
-
+      <div class="homepage">
+        <img src="../static/images/pokeball.png" alt="pokemon" class="pokeball">
+        <h1>Welcome Pokemon Center</h1>
+        <h4>Check your data</h4>
+      </div>
+      <img src="../static/images/pikachu.png" alt="pikachu" class="pika">
       {%endblock%}
     </main>
       
